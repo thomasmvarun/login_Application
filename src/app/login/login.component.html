@@ -4,7 +4,7 @@
     <p>UserName</p>
   </div>
   <div class="col-xs-10 col-sm-10 col-md-10">
-    <input type="text"  class="form-control">
+    <input type="text" [(ngModel)]="userName" class="form-control">
   </div>
 </div>
 </div>
@@ -20,6 +20,6 @@
 </div>
 <div class="row">
   <div class="col-xs-12 col-md-12 loginButton">
-      <button type="button" routerLink="/home"  class="btn btn-primary">Login</button>
+      <button type="button" routerLink="/home" (click)="onLoginClick()" class="btn btn-primary">Login</button>
 </div> 
 </div>  
